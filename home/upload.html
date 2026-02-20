@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WearLoop • Upload Item</title>
+  <link rel="stylesheet" href="upload1.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <div class="logo">WearLoop ✨</div>
+    <nav>
+      <a href="page.html">Home</a>
+      <a href="code.html">Marketplace</a>
+      <a href="upload.html">Upload</a>
+      <a href="htw.html">How It Works</a>
+      <a href="#" class="btn btn-outline">Log In</a>
+      <button class="btn">Sign Up 🌟</button>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Upload & Earn 💚</h1>
+    <p class="subtitle">Share your wardrobe with the community and get AI-powered style magic!</p>
+
+    <div class="grid">
+      <!-- Left: Upload Clothes -->
+      <div class="form-section">
+        <h2>Upload Clothes 👕👗</h2>
+        <div class="form-group">
+          <label for="category">Category</label>
+          <select id="category">
+            <option value="">Select category</option>
+            <option>Dresses</option>
+            <option>Tops</option>
+            <option>Bottoms</option>
+            <option>Outerwear</option>
+            <option>Shoes</option>
+            <option>Accessories</option>
+            <option>Activewear</option>
+            <option>Vintage</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="size">Size</label>
+          <select id="size">
+            <option value="">Select size</option>
+            <option>XXS</option>
+            <option>XS</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
+            <option>One Size</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea id="description" maxlength="500" placeholder="Tell us about your item — condition, brand, material, special details... ✨"></textarea>
+          <div class="char-count"><span id="charCount">0</span>/500 characters</div>
+        </div>
+
+        <div class="form-group">
+          <label for="price">Rental Price (per day)</label>
+          <div class="price-wrapper">
+            <input type="number" id="price" min="0" step="0.01" value="0.00" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Upload Photos (show all the cute angles! 📸)</label>
+          <input type="file" id="images" accept="image/*" multiple hidden />
+          <div class="drop-zone" id="dropArea">
+            Click or drag & drop your photos here 💚<br>
+            <small>jpg, png • max 10 MB each</small>
+          </div>
+          <div class="preview-gallery" id="preview"></div>
+        </div>
+
+        <div class="actions">
+          <button class="btn" id="uploadBtn">Upload Item 🎉</button>
+          <button class="btn btn-outline">Cancel</button>
+        </div>
+      </div>
+
+      <!-- Right: AI Skin Analysis -->
+      <div class="sidebar">
+        <h2>AI Skin Analysis 🪄</h2>
+        <div class="ai-box">
+          <p>Upload a clear selfie in natural daylight (no makeup for best results!) and let our AI suggest colors that make you shine! 🌿</p>
+          <button class="btn" style="margin-top: 1rem;">Upload Selfie & Analyze ✨</button>
+        </div>
+
+        <div class="pro-tip">
+          <h4>💡 Pro Tip</h4>
+          <p>Use natural light and smile! Our AI will find the most flattering shades just for your unique vibe. 😊</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- About / Brand -->
+    <div class="footer-section">
+      <h3>WearLoop</h3>
+      <p>
+        Style That Circulates ♡<br>
+        Rent stunning outfits from your community.<br>
+        Sustainable fashion made affordable with AI magic.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="market.html">Marketplace</a></li>
+        <li><a href="upload.html">Upload Clothes</a></li>
+        <li><a href="htw.html">How It Works</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Support / Help -->
+    <div class="footer-section">
+      <h3>Support</h3>
+      <ul>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Rental Terms</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Community Guidelines</a></li>
+        <li><a href="#">Report Issue</a></li>
+      </ul>
+    </div>
+
+    <!-- Social & Newsletter -->
+    <div class="footer-section">
+      <h3>Stay Connected</h3>
+      <p>Follow us for style tips & new arrivals</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="#" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 WearLoop • Made with ♡ in Kathmandu • All rights reserved.</p>
+  </div>
+</footer>
+
+<style>
+  /* ===== Footer ===== */
+  .site-footer {
+    background-color: #0f1a1a;           /* very dark teal-green - matches your eco vibe */
+    color: #c0d4d0;
+    padding: 60px 0 30px;
+    font-family: 'Poppins', system-ui, sans-serif;
+  }
+
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 24px;
+    gap: 40px;
+  }
+
+  .footer-section {
+    flex: 1;
+    min-width: 220px;
+  }
+
+  .footer-section h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+
+  .footer-section p {
+    line-height: 1.7;
+    font-size: 0.95rem;
+    opacity: 0.9;
+  }
+
+  .footer-section ul {
+    list-style: none;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 12px;
+  }
+
+  .footer-section ul li a {
+    color: #c0d4d0;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.25s ease;
+  }
+
+  .footer-section ul li a:hover {
+    color: #5eead4;           /* bright mint on hover */
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 18px;
+    margin-top: 16px;
+  }
+
+  .social-icons a {
+    color: #c0d4d0;
+    font-size: 1.6rem;
+    transition: all 0.25s ease;
+  }
+
+  .social-icons a:hover {
+    color: #5eead4;
+    transform: translateY(-3px);
+  }
+
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #1e3533;
+    padding-top: 25px;
+    margin-top: 40px;
+    font-size: 0.85rem;
+    color: #8aa29e;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .social-icons {
+      justify-content: center;
+    }
+  }
+</style>
+
+<!-- Font Awesome (needed for social icons) - add only once per page -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</body>
+</html>
