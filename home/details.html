@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clothing Details</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: auto;
+        background: white;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        display: flex;
+        gap: 20px;
+    }
+
+    .image-section img {
+        width: 350px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .details {
+        flex: 1;
+    }
+
+    .title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .price {
+        font-size: 22px;
+        color: #27ae60;
+        margin-bottom: 15px;
+    }
+
+    .info {
+        margin-bottom: 8px;
+    }
+
+    .condition {
+        display: inline-block;
+        background: #e8f5e9;
+        color: #2e7d32;
+        padding: 4px 10px;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+
+    .buttons {
+        margin-top: 20px;
+    }
+
+    .btn {
+        padding: 10px 18px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .buy {
+        background-color: #2ecc71;
+        color: white;
+    }
+
+    .rent {
+        background-color: #3498db;
+        color: white;
+    }
+
+    .wishlist {
+        background-color: #ecf0f1;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    
+    <div class="image-section">
+        <img src="image/panta.jpeg" alt="Clothing Image">
+    </div>
+
+    <div class="details">
+        <div class="title">Black High Waist Pant</div>
+        <div class="price">Rs. 300/day</div>
+
+        <div class="info"><strong>Size:</strong> M</div>
+        <div class="info"><strong>Brand:</strong> Levi's</div>
+        <div class="info"><strong>Color:</strong> Black</div>
+        <div class="info"><strong>Condition:</strong> <span class="condition">Like New</span></div>
+
+        <div class="info"><strong>Description:</strong><br>
+            Classic Black High Waist Pant perfect for casual wear.Formal, Comfortable, stylish, and sustainably sourced.
+        </div>
+
+        <div class="info"><strong>Seller:</strong> Anisha Thapa</div>
+        <div class="info"><strong>Location:</strong> Kathmandu</div>
+
+        <div class="buttons">
+            <button class="btn buy"> <a href="code.html">Go to marketplace</a></button>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

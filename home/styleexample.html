@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Closet • WearLoop</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="styleexample.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">WearLoop ✨</div>
+    <nav>
+      <a href="page.html">Home</a>
+      <a href="code.html">Marketplace</a>
+      <a href="upload.html">Upload</a>
+      <a href="htw.html">How It Works</a>
+      <a href="styleexample.html">Style me</a>
+      <a href="#" class="btn-outline btn">Log In</a>
+      <a href="signup.html" class="btn">Sign Up 🌟</a>
+    </nav>
+  </header>
+
+<main>
+  <h1>🎀Digital Closet</h1>
+  <p class="subtitle">Choose a style and click "Style Me"</p>
+
+  <!-- CONTROLS -->
+  <section class="controls">
+    <div class="dropdown-container">
+      <label for="category">Select Style:</label>
+      <select id="category">
+        <option value="casual">Casual 👗</option>
+        <option value="formal">Formal 👠</option>
+        <option value="traditional">Traditional 🧣</option>
+      </select>
+    </div>
+
+    <button class="btn" onclick="generateRandomOutfit()">Style Me 🎀</button>
+  </section>
+
+  <!-- AI Output -->
+  <section class="ai-stylist">
+    <div class="ai-result" id="aiOutput">
+      Click "Style Me" to generate outfit
+    </div>
+  </section>
+
+  <!-- Preview -->
+  <section class="preview-section">
+    <h2>Your Outfit Preview:</h2>
+    <div class="preview">
+      <img id="topPreview" src="image/top1.jpeg" alt="Top">
+      <img id="bottomPreview" src="image/bottom.jpeg" alt="Bottom">
+    </div>
+  </section>
+</main>
+</div>
+
+<!-- JavaScript -->
+<script src="styleexample.js"></script>
+
+</body>
+</html>
