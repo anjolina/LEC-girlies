@@ -27,7 +27,8 @@ const formalBottoms = [
 const traditionalOutfits = [
   "image/tra.jpeg",
   "image/tra1.jpeg",
-  "image/tra2.jpeg"
+  "image/tra2.jpeg",
+  "image/tra3.jpeg"
 ];
 
 function getRandom(arr) {
