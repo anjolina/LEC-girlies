@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cher Digital Closet • WearLoop</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">WearLoop ✨</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Marketplace</a>
+      <a href="#">Upload</a>
+      <a href="#">How It Works</a>
+      <a href="#" class="btn-outline btn">Log In</a>
+      <button class="btn">Sign Up 🌟</button>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <h1>🎀 Cher Digital Closet</h1>
+    <p class="subtitle">Click "Style Me" and get a random outfit!</p>
+
+    <!-- AI Stylist Section -->
+    <section class="ai-stylist">
+      <button class="btn" onclick="generateRandomOutfit()">Style Me 🎀</button>
+      <div class="ai-result" id="aiOutput">
+        Click "Style Me" to get a random outfit
+      </div>
+    </section>
+
+    <!-- Outfit Preview Section -->
+    <section class="preview-section">
+      <h2>Your Outfit Preview:</h2>
+      <div class="preview">
+        <!-- Default images -->
+        <img id="topPreview" src="image/e075192ddfd6b8ab51360b41a6ba3f47.jpg" alt="Top">
+        <img id="bottomPreview" src="image/05493779f7d34603c3df1bbb7e807ae7.jpg" alt="Bottom">
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<!-- JavaScript -->
+<script src="style.js"></script>
+
+</body>
+</html>

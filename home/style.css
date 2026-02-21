@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #fffaf5;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #444;
+}
+
+.btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #0f9d8a;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid  #99f6e4;
+  color: #0f9d8a;
+}
+
+h1 {
+  margin-top: 20px;
+  color: #0f9d8a;
+}
+
+.subtitle {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* AI Stylist Section */
+.ai-stylist {
+  margin: 30px 0;
+  padding: 20px;
+  background:  #99f6e4;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.ai-result {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #444;
+}
+
+/* Outfit Preview */
+.preview-section {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.preview img {
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.preview img:hover {
+  transform: scale(1.05);
+}

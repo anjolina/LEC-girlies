@@ -173,10 +173,10 @@ textarea {
 }
 
 .price-wrapper::before {
-  content: "$";
+  content: "Rs";
   position: absolute;
-  left: 0.9rem;
-  top: 50%;
+  left: 0.8rem;
+  top: 45%;
   transform: translateY(-50%);
   color: var(--gray);
   font-weight: 500;
